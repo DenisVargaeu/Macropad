@@ -1,0 +1,21 @@
+CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
+
+Copyright (c) 2026 Denis Varga
+
+This licence applies to the documentation, source files, and design files
+of the "macropad" hardware project.
+
+You may redistribute and modify this documentation under the terms of
+the CERN-OHL-P-2.0 (https://ohwr.org/cern_ohl_p_2_0.txt or
+https://opensource.org/licenses/CERN-OHL-P-2.0).
+
+This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED
+WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY
+AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-P-2.0
+for applicable conditions.
+
+Full license text:
+https://ohwr.org/cern_ohl_p_2_0.txt
+https://opensource.org/licenses/CERN-OHL-P-2.0
+
+SPDX-License-Identifier: CERN-OHL-P-2.0
