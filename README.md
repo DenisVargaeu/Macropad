@@ -70,12 +70,14 @@ This project is a fully open-source hardware macropad designed in KiCad 10. It f
 
 ## Quick View (No KiCad Required)
 
-| Document | Link |
-|----------|------|
-| **Schematic (PDF)** | [`macropad-schematic.pdf`](macropad-schematic.pdf) |
-| **PCB Layout (PDF, all layers)** | [`macropad-pcb.pdf`](macropad-pcb.pdf) |
-| **3D Model (STEP)** | [`macropad-3d.step`](macropad-3d.step) |
-| **3D Model (STL)** | [`macropad-3d.stl`](macropad-3d.stl) |
+| Document | Link | Description |
+|----------|------|-------------|
+| **Schematic (PDF)** | [`macropad-schematic.pdf`](macropad-schematic.pdf) | Full schematic, all pages |
+| **PCB Layout (PDF)** | [`macropad-pcb.pdf`](macropad-pcb.pdf) | All layers (Cu, Silk, Mask, Edge) |
+| **3D Model (STEP)** | [`macropad-3d.step`](macropad-3d.step) | For CAD (FreeCAD, Fusion 360, OnShape) |
+| **3D Model (STL, Full)** | [`macropad-3d-full.stl`](macropad-3d-full.stl) | **All components** (18 MB) — PCB, Pico, 16 keys, LED, resistors, OLED |
+| **3D Model (STL, PCB+Pico)** | [`macropad-pcb-pico.stl`](macropad-pcb-pico.stl) | Board + Pico only (6 MB) — for enclosure design |
+| **3D Model (STL, Buttons only)** | [`macropad-3d.stl`](macropad-3d.stl) | Original export (buttons only, 0.4 MB) |
 
 ## Repository Structure
 
@@ -86,8 +88,11 @@ macropad/
 ├── macropad.kicad_pcb           # PCB layout
 ├── macropad-schematic.pdf       # Exported schematic (PDF)
 ├── macropad-pcb.pdf             # Exported PCB layers (PDF)
-├── macropad-3d.step             # 3D model (STEP)
-├── macropad-3d.stl              # 3D model (STL)
+├── macropad-3d.step             # 3D model (STEP) — for CAD
+├── macropad-3d-full.stl         # 3D model (STL) — ALL components (18 MB)
+├── macropad-pcb-pico.stl        # 3D model (STL) — PCB + Pico only (6 MB)
+├── macropad-3d.stl              # 3D model (STL) — buttons only (0.4 MB)
+├── export_stl.py                # FreeCAD script used for STL export
 ├── gerbers/                     # Gerber files for fabrication (generated)
 ├── LICENSE                      # CERN-OHL-P-2.0 license
 └── README.md                    # This file
