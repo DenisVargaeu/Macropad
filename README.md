@@ -84,8 +84,9 @@ This project is a fully open-source hardware macropad designed in KiCad 10. It f
 ```
 macropad/
 ├── macropad.kicad_pro           # KiCad project file
-├── macropad.kicad_sch           # Schematic
-├── macropad.kicad_pcb           # PCB layout
+├── macropad.kicad_sch           # Schematic (editable)
+├── macropad.kicad_pcb           # PCB layout (editable)
+├── macropad.kicad_prl           # Project local settings
 ├── macropad-schematic.pdf       # Exported schematic (PDF)
 ├── macropad-pcb.pdf             # Exported PCB layers (PDF)
 ├── macropad-3d.step             # 3D model (STEP) — for CAD
@@ -93,10 +94,20 @@ macropad/
 ├── macropad-pcb-pico.stl        # 3D model (STL) — PCB + Pico only (6 MB)
 ├── macropad-3d.stl              # 3D model (STL) — buttons only (0.4 MB)
 ├── export_stl.py                # FreeCAD script used for STL export
-├── gerbers/                     # Gerber files for fabrication (generated)
+├── gerbers/                     # Gerber files for fabrication (generated, gitignored)
 ├── LICENSE                      # CERN-OHL-P-2.0 license
 └── README.md                    # This file
 ```
+
+## Files in This Repository
+
+| Category | Files | Description |
+|----------|-------|-------------|
+| **KiCad Source** | `macropad.kicad_pro`, `.kicad_sch`, `.kicad_pcb`, `.kicad_prl` | Full editable design — open in KiCad 10+ |
+| **Documentation** | `macropad-schematic.pdf`, `macropad-pcb.pdf` | View schematic/PCB without KiCad |
+| **3D Models** | `.step`, `.stl` (3 variants) | For CAD, 3D printing, enclosure design |
+| **Fabrication** | `gerbers/` (generated) | Send to PCB manufacturer (JLCPCB, PCBWay, etc.) |
+| **License** | `LICENSE` | CERN-OHL-P-2.0 (permissive open hardware) |
 
 ## Getting Started
 
@@ -109,14 +120,23 @@ macropad/
 ### Opening the Project
 
 1. Clone this repository
-2. Open `macropad.kicad_pro` in KiCad
+2. Open `macropad.kicad_pro` in KiCad 10+
 3. The schematic (`macropad.kicad_sch`) and PCB (`macropad.kicad_pcb`) will load automatically
+
+> **Note:** All KiCad source files are included in this repository. No need to re-create the project.
 
 ### Fabrication
 
-1. Generate Gerbers: `File → Fabrication Outputs → Gerbers (.gbr)`
-2. Generate Drill files: `File → Fabrication Outputs → Drill Files (.drl)`
-3. Send to your preferred PCB manufacturer (JLCPCB, PCBWay, OSH Park, etc.)
+**Option A: Use pre-generated Gerbers (recommended)**
+- Gerber files are in the `gerbers/` directory (generated from this design)
+- Includes: F.Cu, B.Cu, F.SilkS, B.SilkS, F.Mask, B.Mask, Edge.Cuts, drill file
+- Ready to upload to JLCPCB, PCBWay, OSH Park, etc.
+
+**Option B: Generate from KiCad**
+1. Open `macropad.kicad_pro` in KiCad
+2. `File → Fabrication Outputs → Gerbers (.gbr)`
+3. `File → Fabrication Outputs → Drill Files (.drl)`
+4. Send to your preferred PCB manufacturer
 
 **Board specs for fabrication:**
 - 2 layers
