@@ -1,11 +1,10 @@
-# KiCad project files
-*.kicad_pro
-*.kicad_sch
-*.kicad_pcb
+# KiCad backup/lock files only
 *.kicad_prl
-*.kicad_sym
-*.kicad_dru
-*.kicad_wks
+*.lck
+*_backup_*
+*~
+*.bak
+*.backup
 
 # Backup files
 *~
