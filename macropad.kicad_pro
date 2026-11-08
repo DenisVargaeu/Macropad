@@ -530,7 +530,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "macropad.stl",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -665,7 +665,7 @@
         "uuid": "56913d37-0d9b-436a-91cf-206e4e07f0ea"
       }
     ],
-    "used_designators": "#PWR6-9,AFF1,D1-2,R1-3,U1",
+    "used_designators": "#PWR6-11,AFF1,D1-2,R1-3,RV1,U1",
     "variants": []
   },
   "sheets": [
