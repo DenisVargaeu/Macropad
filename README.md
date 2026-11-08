@@ -75,6 +75,7 @@ This project is a fully open-source hardware macropad designed in KiCad 10. It f
 | **Schematic (PDF)** | [`macropad-schematic.pdf`](macropad-schematic.pdf) |
 | **PCB Layout (PDF, all layers)** | [`macropad-pcb.pdf`](macropad-pcb.pdf) |
 | **3D Model (STEP)** | [`macropad-3d.step`](macropad-3d.step) |
+| **3D Model (STL)** | [`macropad-3d.stl`](macropad-3d.stl) |
 
 ## Repository Structure
 
@@ -86,6 +87,7 @@ macropad/
 ├── macropad-schematic.pdf       # Exported schematic (PDF)
 ├── macropad-pcb.pdf             # Exported PCB layers (PDF)
 ├── macropad-3d.step             # 3D model (STEP)
+├── macropad-3d.stl              # 3D model (STL)
 ├── gerbers/                     # Gerber files for fabrication (generated)
 ├── LICENSE                      # CERN-OHL-P-2.0 license
 └── README.md                    # This file
