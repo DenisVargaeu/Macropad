@@ -68,15 +68,27 @@ This project is a fully open-source hardware macropad designed in KiCad 10. It f
 
 > **Resistor values:** Choose based on LED forward voltage and desired current (e.g., 220 Ω for ~10 mA @ 3.3 V).
 
+## Quick View (No KiCad Required)
+
+| Document | Link |
+|----------|------|
+| **Schematic (PDF)** | [`macropad-schematic.pdf`](macropad-schematic.pdf) |
+| **PCB Layout (PDF, all layers)** | [`macropad-pcb.pdf`](macropad-pcb.pdf) |
+| **3D Model (STEP)** | [`macropad-3d.step`](macropad-3d.step) |
+
 ## Repository Structure
 
 ```
 macropad/
-├── macropad.kicad_pro       # KiCad project file
-├── macropad.kicad_sch       # Schematic
-├── macropad.kicad_pcb       # PCB layout
-├── macropad-F_Cu.pdf        # Front copper layer plot (for reference)
-└── README.md                # This file
+├── macropad.kicad_pro           # KiCad project file
+├── macropad.kicad_sch           # Schematic
+├── macropad.kicad_pcb           # PCB layout
+├── macropad-schematic.pdf       # Exported schematic (PDF)
+├── macropad-pcb.pdf             # Exported PCB layers (PDF)
+├── macropad-3d.step             # 3D model (STEP)
+├── gerbers/                     # Gerber files for fabrication (generated)
+├── LICENSE                      # CERN-OHL-P-2.0 license
+└── README.md                    # This file
 ```
 
 ## Getting Started

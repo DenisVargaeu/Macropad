@@ -16,16 +16,10 @@
 # Lock files
 *.lck
 
-# Gerber output (generated)
-*.gbr
-*.gbrjob
-*.drl
-*.pdf
+# Gerber output (generated) - keep gerbers/ directory ignored
+gerbers/
 
 # 3D models (downloaded from KiCad library)
-*.step
-*.stp
-*.wrl
 *.3dshapes/
 
 # OS files
@@ -36,4 +30,5 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
-*.swo.history/
+*.swo
+.history/
