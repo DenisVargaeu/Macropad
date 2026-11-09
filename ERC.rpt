@@ -1,0 +1,33 @@
+ERC report (2026-11-09T17:44:50, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[pin_not_connected]: Pin not connected
+    ; error
+    @(1650 mils, 3800 mils): Symbol A1 Pin 30 [RUN, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(1650 mils, 3900 mils): Symbol A1 Pin 37 [3V3_EN, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(2350 mils, 3200 mils): Symbol A1 Pin 39 [VSYS, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(2350 mils, 3200 mils): Symbol A1 Pin 39 [VSYS, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(3450 mils, 5000 mils): Symbol A1 Pin 35 [ADC_VREF, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(3450 mils, 5000 mils): Symbol A1 Pin 35 [ADC_VREF, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(3450 mils, 5600 mils): Symbol A1 Pin 33 [AGND, Power output, Line]
+
+ ** ERC messages: 7  Errors 7  Warnings 0
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
